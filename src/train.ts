@@ -1,23 +1,8 @@
 import { recurrent,NeuralNetwork } from 'brain.js';
 import fs from 'fs'
+import { configNetwrok } from './config';
 import { data } from './data';
 import { dataSet } from './data-set';
-
-// const configNetwrok = {
-//     // activation: 'sigmoid', // activation function
-//     hiddenLayers: [], 
-//     // learningRate: 0.3,
-//     iterations: 20000, 
-//     errorThresh:  0.00005,
-// }
-const configNetwrok = {
-    activation: 'sigmoid',
-    hiddenLayers: [], 
-    errorThresh: 0.005,  
-    iterations: 20000,  
-    learningRate: 0.3
-}
-
 
 // export const network = new recurrent.LSTM();
 export const network = new NeuralNetwork();
